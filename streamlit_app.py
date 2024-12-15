@@ -27,7 +27,7 @@ def execute_query(query, conn):
         return None
 
 # Streamlit layout
-st.title("Streamlit App for PostgreSQL Queries")
+st.title("Amazon Product")
 st.subheader("Select a predefined query to execute")
 
 # List of queries split into two pages
