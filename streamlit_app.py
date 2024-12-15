@@ -123,7 +123,7 @@ queries_page2 = {
         FROM amazon_products
         GROUP BY "City"
         ORDER BY Total_Orders DESC
-        LIMIT 1;
+        LIMIT 3;
     ''',
     "12) Calculate the Average Order Value (AOV) Per Segment": '''
         SELECT "Segment", SUM(("List Price" * "Quantity") * (1 - "Discount Percent" / 100)) / COUNT(*) AS Average_Order_Value
