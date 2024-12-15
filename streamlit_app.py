@@ -1,11 +1,11 @@
 import streamlit as st
-import pg8000
+import psycopg2
 import pandas as pd
 
 # Database connection function
 def get_db_connection():
     try:
-        conn = pg8000.connect(
+        conn = psycopg2.connect(
             host="mini-project.cb460iwoim0p.ap-south-1.rds.amazonaws.com",       # Replace with your PostgreSQL server host
             database="postgres",# Replace with your database name
             user="postgres",   # Replace with your username
